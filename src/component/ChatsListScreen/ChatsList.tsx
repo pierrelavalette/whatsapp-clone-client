@@ -1,8 +1,8 @@
 import React from "react";
 import moment from "moment";
-import {List, ListItem} from "@material-ui/core";
+import { List, ListItem } from "@material-ui/core";
 import styled from "styled-components";
-import { useState, useMemo } from 'react';
+import { useState, useMemo } from "react";
 
 const Container = styled.div`
   height: calc(100% - 56px);
@@ -56,40 +56,65 @@ const MessageDate = styled.div`
   font-size: 13px;
 `;
 
+const getChatsQuery = `
+    query GetChats {
+        chats{
+            id
+            name
+            picture
+            lastMessage{
+                id
+                content
+                createdAt
+            }
+        }
+    }
+`;
+
 const ChatsList: React.FC = () => {
-    const [chats, setChats] = useState<any[]>([]);
+  const [chats, setChats] = useState<any[]>([]);
 
-    useMemo(async () => {
-        const body = await fetch(`${process.env.REACT_APP_SERVER_URL}/chats`);
-        const chats = await body.json();
-        setChats(chats);
-    }, []);
+  useMemo(async () => {
 
-    return (
-        <Container>
-            <StyledList>
-                {chats.map((chat) => {
-                        return (
-                            <StyledListItem key={chat.id} button>
-                                <ChatPicture src={chat.picture} alt="Profile"/>
-                                <ChatInfo>
-                                    <ChatName>{chat.name}</ChatName>
-                                    {chat.lastMessage && (
-                                        <>
-                                            <MessageContent>{chat.lastMessage.content}</MessageContent>
-                                            <MessageDate>{moment(chat.lastMessage.createdAt).format('HH:mm')}</MessageDate>
-                                        </>
-                                    )}
-                                </ChatInfo>
-                            </StyledListItem>
-                        );
-                    }
+    const body = await fetch(`${process.env.REACT_APP_SERVER_URL}/graphql`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ query: getChatsQuery }),
+    });
+
+    const {
+      data: { chats },
+    } = await body.json();
+
+    setChats(chats);
+  }, []);
+
+  return (
+    <Container>
+      <StyledList>
+        {chats.map((chat) => {
+          return (
+            <StyledListItem key={chat.id} button>
+              <ChatPicture src={chat.picture} alt="Profile" />
+              <ChatInfo>
+                <ChatName>{chat.name}</ChatName>
+                {chat.lastMessage && (
+                  <>
+                    <MessageContent>{chat.lastMessage.content}</MessageContent>
+                    <MessageDate>
+                      {moment(chat.lastMessage.createdAt).format("HH:mm")}
+                    </MessageDate>
+                  </>
                 )}
-            </StyledList>
-        </Container>
-    );
-}
+              </ChatInfo>
+            </StyledListItem>
+          );
+        })}
+      </StyledList>
+    </Container>
+  );
+};
 
 export default ChatsList;
-
-
