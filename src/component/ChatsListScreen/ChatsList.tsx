@@ -75,7 +75,6 @@ const ChatsList: React.FC = () => {
   const [chats, setChats] = useState<any[]>([]);
 
   useMemo(async () => {
-
     const body = await fetch(`${process.env.REACT_APP_SERVER_URL}/graphql`, {
       method: "POST",
       headers: {
@@ -98,15 +97,17 @@ const ChatsList: React.FC = () => {
           return (
             <StyledListItem key={chat.id} button>
               <ChatPicture
-                  dat-testid="picture"
-                  src={chat.picture}
-                  alt="Profile"
+                dat-testid="picture"
+                src={chat.picture}
+                alt="Profile"
               />
               <ChatInfo>
                 <ChatName data-testid="name">{chat.name}</ChatName>
                 {chat.lastMessage && (
                   <>
-                    <MessageContent data-testid="content">{chat.lastMessage.content}</MessageContent>
+                    <MessageContent data-testid="content">
+                      {chat.lastMessage.content}
+                    </MessageContent>
                     <MessageDate data-testid="date">
                       {moment(chat.lastMessage.createdAt).format("HH:mm")}
                     </MessageDate>
