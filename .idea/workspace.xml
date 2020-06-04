@@ -20,11 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="579b2794-3491-474e-aee6-fe3526444094" name="Default Changelist" comment="Client Step 6.3: Navigate to chat on click">
+      <change afterPath="$PROJECT_DIR$/src/component/AnimatedSwitch.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/ChatRoomScreen/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/ChatRoomScreen/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/ChatsListScreen/ChatsList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/ChatsListScreen/ChatsList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/ChatsListScreen/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/ChatsListScreen/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/react-app-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/react-app-env.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,8 +67,16 @@
       <option name="presentableId" value="Default" />
       <updated>1591198053517</updated>
       <workItem from="1591198054920" duration="6131000" />
-      <workItem from="1591264174634" duration="3476000" />
+      <workItem from="1591264174634" duration="4093000" />
     </task>
+    <task id="LOCAL-00001" summary="Client Step 6.3: Navigate to chat on click">
+      <created>1591267739257</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1591267739257</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,9 +103,9 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="229" y="100" key="SettingsEditor/0.23.1440.877/1440.-510.1920.1057@0.23.1440.877" timestamp="1591204188568" />
-    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1591265304269">
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1591267827806">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877/1440.-510.1920.1057@0.23.1440.877" timestamp="1591265304269" />
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877/1440.-510.1920.1057@0.23.1440.877" timestamp="1591267827806" />
   </component>
 </project>
