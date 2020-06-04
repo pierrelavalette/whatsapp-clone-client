@@ -19,7 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="579b2794-3491-474e-aee6-fe3526444094" name="Default Changelist" comment="" />
+    <list default="true" id="579b2794-3491-474e-aee6-fe3526444094" name="Default Changelist" comment="Client Step 6.3: Navigate to chat on click">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/ChatRoomScreen/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/ChatRoomScreen/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/ChatsListScreen/ChatsList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/ChatsListScreen/ChatsList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/ChatsListScreen/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/ChatsListScreen/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,6 +36,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1cobmjk7at3xeVraAD9nsz60KyJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -46,7 +54,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
-    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -59,6 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1591198053517</updated>
       <workItem from="1591198054920" duration="6131000" />
+      <workItem from="1591264174634" duration="3476000" />
     </task>
     <servers />
   </component>
@@ -75,15 +84,20 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Client Step 6.3: Navigate to chat on click" />
+    <option name="LAST_COMMIT_MESSAGE" value="Client Step 6.3: Navigate to chat on click" />
   </component>
   <component name="WindowStateProjectService">
     <state x="229" y="100" key="SettingsEditor" timestamp="1591204188568">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="229" y="100" key="SettingsEditor/0.23.1440.877/1440.-510.1920.1057@0.23.1440.877" timestamp="1591204188568" />
-    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1591211159104">
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1591265304269">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877/1440.-510.1920.1057@0.23.1440.877" timestamp="1591211159104" />
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877/1440.-510.1920.1057@0.23.1440.877" timestamp="1591265304269" />
   </component>
 </project>
