@@ -1,11 +1,11 @@
-import Button from '@material-ui/core/Button';
-import Toolbar from '@material-ui/core/Toolbar';
-import ArrowBackIcon from '@material-ui/icons/ArrowBack';
-import React from 'react';
-import { useCallback } from 'react';
-import styled from 'styled-components';
-import { History } from 'history';
-import { ChatQueryResult } from './index';
+import Button from "@material-ui/core/Button";
+import Toolbar from "@material-ui/core/Toolbar";
+import ArrowBackIcon from "@material-ui/icons/ArrowBack";
+import React from "react";
+import { useCallback } from "react";
+import styled from "styled-components";
+import { History } from "history";
+import { ChatQueryResult } from "./index";
 
 const Container = styled(Toolbar)`
   padding: 0;
@@ -36,24 +36,24 @@ const Name = styled.div`
 `;
 
 interface ChatNavbarProps {
-    history: History;
-    chat: ChatQueryResult;
+  history: History;
+  chat: ChatQueryResult;
 }
 
 const ChatNavbar: React.FC<ChatNavbarProps> = ({ chat, history }) => {
-    const navBack = useCallback(() => {
-        history.replace('/chats');
-    }, [history]);
+  const navBack = useCallback(() => {
+    history.replace("/chats");
+  }, [history]);
 
-    return (
-        <Container>
-            <BackButton onClick={navBack}>
-                <ArrowBackIcon />
-            </BackButton>
-            <Picture src={chat.picture} />
-            <Name>{chat.name}</Name>
-        </Container>
-    );
+  return (
+    <Container>
+      <BackButton onClick={navBack}>
+        <ArrowBackIcon />
+      </BackButton>
+      <Picture src={chat.picture} />
+      <Name>{chat.name}</Name>
+    </Container>
+  );
 };
 
 export default ChatNavbar;

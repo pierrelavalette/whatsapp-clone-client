@@ -19,8 +19,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="579b2794-3491-474e-aee6-fe3526444094" name="Default Changelist" comment="Client Step 7.1: Add Apollo client">
+    <list default="true" id="579b2794-3491-474e-aee6-fe3526444094" name="Default Changelist" comment="Client Step 7.2: Provide Apollo client">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/client.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/AnimatedSwitch.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/AnimatedSwitch.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/ChatRoomScreen/ChatNavBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/ChatRoomScreen/ChatNavBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/ChatRoomScreen/MessageInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/ChatRoomScreen/MessageInput.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/ChatRoomScreen/MessagesList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/ChatRoomScreen/MessagesList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/ChatRoomScreen/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/ChatRoomScreen/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/ChatsListScreen/ChatsList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/ChatsListScreen/ChatsList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/ChatsListScreen/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/ChatsListScreen/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/react-app-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/react-app-env.d.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +74,7 @@
       <updated>1591198053517</updated>
       <workItem from="1591198054920" duration="6131000" />
       <workItem from="1591264174634" duration="10733000" />
-      <workItem from="1591345295772" duration="1693000" />
+      <workItem from="1591345295772" duration="3057000" />
     </task>
     <task id="LOCAL-00001" summary="Client Step 6.3: Navigate to chat on click">
       <created>1591267739257</created>
@@ -107,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591355677333</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Client Step 7.2: Provide Apollo client">
+      <created>1591355988180</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1591355988180</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,7 +150,8 @@
     <MESSAGE value="Client Step 6.7: Define onSendMessage callback" />
     <MESSAGE value="Client Step 6.8: Reset scroller on message sent" />
     <MESSAGE value="Client Step 7.1: Add Apollo client" />
-    <option name="LAST_COMMIT_MESSAGE" value="Client Step 7.1: Add Apollo client" />
+    <MESSAGE value="Client Step 7.2: Provide Apollo client" />
+    <option name="LAST_COMMIT_MESSAGE" value="Client Step 7.2: Provide Apollo client" />
   </component>
   <component name="WindowStateProjectService">
     <state x="229" y="100" key="SettingsEditor" timestamp="1591204188568">

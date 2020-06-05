@@ -1,8 +1,8 @@
-import Button from '@material-ui/core/Button';
-import SendIcon from '@material-ui/icons/Send';
-import React from 'react';
-import styled from 'styled-components';
-import {useState} from 'react';
+import Button from "@material-ui/core/Button";
+import SendIcon from "@material-ui/icons/Send";
+import React from "react";
+import styled from "styled-components";
+import { useState } from "react";
 
 const Container = styled.div`
   display: flex;
@@ -34,53 +34,51 @@ const SendButton = styled(Button)`
   margin-right: 0 !important;
   color: white !important;
   padding-left: 20px !important;
- 
+
   svg {
     margin-left: -3px;
   }
 `;
 
 interface MessageInputProps {
-    onSendMessage(content: string): any;
+  onSendMessage(content: string): any;
 }
 
-const MessageInput: React.FC<MessageInputProps> = ({onSendMessage}) => {
-    const [message, setMessage] = useState('');
+const MessageInput: React.FC<MessageInputProps> = ({ onSendMessage }) => {
+  const [message, setMessage] = useState("");
 
-    const onKeyPress = (e:any) => {
-        if (e.charCode === 13) {
-            submitMessage();
-        }
-    };
-
-    const onChange = ({ target } : any ) => {
-        setMessage(target.value);
-    };
-
-    const submitMessage = () => {
-        if (!message) return;
-        setMessage('');
-        if (typeof onSendMessage === 'function') {
-            onSendMessage(message);
-        }
+  const onKeyPress = (e: any) => {
+    if (e.charCode === 13) {
+      submitMessage();
     }
+  };
 
-    return(
+  const onChange = ({ target }: any) => {
+    setMessage(target.value);
+  };
+
+  const submitMessage = () => {
+    if (!message) return;
+    setMessage("");
+    if (typeof onSendMessage === "function") {
+      onSendMessage(message);
+    }
+  };
+
+  return (
     <Container>
-        <ActualInput type="text"
-                     placeholder="Type a message"
-                     value={message}
-                     onKeyPress={onKeyPress}
-                     onChange={onChange}
-        />
-        <SendButton variant="contained"
-                    color="primary"
-                    onClick={submitMessage}
-        >
-            <SendIcon/>
-        </SendButton>
+      <ActualInput
+        type="text"
+        placeholder="Type a message"
+        value={message}
+        onKeyPress={onKeyPress}
+        onChange={onChange}
+      />
+      <SendButton variant="contained" color="primary" onClick={submitMessage}>
+        <SendIcon />
+      </SendButton>
     </Container>
-    );
+  );
 };
 
 export default MessageInput;

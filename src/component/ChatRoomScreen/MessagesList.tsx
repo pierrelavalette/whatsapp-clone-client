@@ -1,9 +1,9 @@
-import moment from 'moment';
-import React from 'react';
-import { useEffect, useRef } from 'react';
-import ReactDOM from 'react-dom';
-import styled from 'styled-components';
-import { ChatQueryMessage } from './index';
+import moment from "moment";
+import React from "react";
+import { useEffect, useRef } from "react";
+import ReactDOM from "react-dom";
+import styled from "styled-components";
+import { ChatQueryMessage } from "./index";
 
 const Container = styled.div`
   display: block;
@@ -23,16 +23,16 @@ const MessageItem = styled.div`
   margin-top: 10px;
   margin-bottom: 10px;
   clear: both;
- 
+
   &::after {
-    content: '';
+    content: "";
     display: table;
     clear: both;
   }
- 
+
   &::before {
     background-image: url(/assets/message-mine.png);
-    content: '';
+    content: "";
     position: absolute;
     bottom: 3px;
     width: 12px;
@@ -47,9 +47,9 @@ const MessageItem = styled.div`
 const Contents = styled.div`
   padding: 5px 7px;
   word-wrap: break-word;
- 
+
   &::after {
-    content: ' \\00a0\\00a0\\00a0\\00a0\\00a0\\00a0\\00a0\\00a0\\00a0\\00a0\\00a0\\00a0\\00a0\\00a0\\00a0\\00a0\\00a0\\00a0\\00a0';
+    content: " \\00a0\\00a0\\00a0\\00a0\\00a0\\00a0\\00a0\\00a0\\00a0\\00a0\\00a0\\00a0\\00a0\\00a0\\00a0\\00a0\\00a0\\00a0\\00a0";
     display: inline;
   }
 `;
@@ -63,32 +63,29 @@ const Timestamp = styled.div`
 `;
 
 interface MessagesListProps {
-    messages: Array<ChatQueryMessage>;
+  messages: Array<ChatQueryMessage>;
 }
 
-const MessagesList: React.FC<MessagesListProps> = ({messages}) => {
-    const selfRef = useRef(null);
+const MessagesList: React.FC<MessagesListProps> = ({ messages }) => {
+  const selfRef = useRef(null);
 
-    useEffect(() => {
-        if (!selfRef.current) return;
+  useEffect(() => {
+    if (!selfRef.current) return;
 
-        const selfDOMNode = ReactDOM.findDOMNode(selfRef.current) as HTMLElement;
-        selfDOMNode.scrollTop = Number.MAX_SAFE_INTEGER;
-    }, [messages.length]);
+    const selfDOMNode = ReactDOM.findDOMNode(selfRef.current) as HTMLElement;
+    selfDOMNode.scrollTop = Number.MAX_SAFE_INTEGER;
+  }, [messages.length]);
 
-    return(
+  return (
     <Container ref={selfRef}>
-        {messages.map((message: any) => (
-            <MessageItem key={message.id}>
-                <Contents>{message.content}</Contents>
-                <Timestamp>{moment(message.createdAt).format('HH:mm')}</Timestamp>
-            </MessageItem>
-        ))}
+      {messages.map((message: any) => (
+        <MessageItem key={message.id}>
+          <Contents>{message.content}</Contents>
+          <Timestamp>{moment(message.createdAt).format("HH:mm")}</Timestamp>
+        </MessageItem>
+      ))}
     </Container>
-    );
+  );
 };
 
 export default MessagesList;
-
-
-
