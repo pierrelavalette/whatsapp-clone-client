@@ -19,19 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="579b2794-3491-474e-aee6-fe3526444094" name="Default Changelist" comment="Client Step 7.2: Provide Apollo client">
+    <list default="true" id="579b2794-3491-474e-aee6-fe3526444094" name="Default Changelist" comment="Client Step 7.3: Replace fetch() calls with Apollo useQuery()">
+      <change afterPath="$PROJECT_DIR$/src/graphql/queries/chats.query.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/graphql/queries/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/client.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/AnimatedSwitch.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/AnimatedSwitch.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/ChatRoomScreen/ChatNavBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/ChatRoomScreen/ChatNavBar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/ChatRoomScreen/MessageInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/ChatRoomScreen/MessageInput.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/ChatRoomScreen/MessagesList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/ChatRoomScreen/MessagesList.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/ChatRoomScreen/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/ChatRoomScreen/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/ChatsListScreen/ChatsList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/ChatsListScreen/ChatsList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/ChatsListScreen/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/ChatsListScreen/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/react-app-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/react-app-env.d.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +40,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -59,7 +52,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="SvnConfiguration">
@@ -74,7 +67,7 @@
       <updated>1591198053517</updated>
       <workItem from="1591198054920" duration="6131000" />
       <workItem from="1591264174634" duration="10733000" />
-      <workItem from="1591345295772" duration="3057000" />
+      <workItem from="1591345295772" duration="9534000" />
     </task>
     <task id="LOCAL-00001" summary="Client Step 6.3: Navigate to chat on click">
       <created>1591267739257</created>
@@ -125,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591355988180</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Client Step 7.3: Replace fetch() calls with Apollo useQuery()">
+      <created>1591357697577</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1591357697577</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,16 +151,21 @@
     <MESSAGE value="Client Step 6.8: Reset scroller on message sent" />
     <MESSAGE value="Client Step 7.1: Add Apollo client" />
     <MESSAGE value="Client Step 7.2: Provide Apollo client" />
-    <option name="LAST_COMMIT_MESSAGE" value="Client Step 7.2: Provide Apollo client" />
+    <MESSAGE value="Client Step 7.3: Replace fetch() calls with Apollo useQuery()" />
+    <option name="LAST_COMMIT_MESSAGE" value="Client Step 7.3: Replace fetch() calls with Apollo useQuery()" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="229" y="100" key="SettingsEditor" timestamp="1591204188568">
+    <state x="374" y="246" width="691" height="627" key="EditFileWatcherDialog" timestamp="1591364165224">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="229" y="100" key="SettingsEditor/0.23.1440.877/1440.-510.1920.1057@0.23.1440.877" timestamp="1591204188568" />
-    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1591277716617">
+    <state x="374" y="246" width="691" height="627" key="EditFileWatcherDialog/0.23.1440.877/1440.-510.1920.1057@0.23.1440.877" timestamp="1591364165224" />
+    <state x="229" y="100" key="SettingsEditor" timestamp="1591374583745">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877/1440.-510.1920.1057@0.23.1440.877" timestamp="1591277716617" />
+    <state x="229" y="100" key="SettingsEditor/0.23.1440.877/1440.-510.1920.1057@0.23.1440.877" timestamp="1591374583745" />
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1591369815516">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877/1440.-510.1920.1057@0.23.1440.877" timestamp="1591369815516" />
   </component>
 </project>
