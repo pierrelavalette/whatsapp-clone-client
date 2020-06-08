@@ -19,6 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
+    <list default="true" id="579b2794-3491-474e-aee6-fe3526444094" name="Default Changelist" comment="Client Step 8.1: Send message with a GraphQL mutation">
+      <change afterPath="$PROJECT_DIR$/codegen.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <list default="true" id="579b2794-3491-474e-aee6-fe3526444094" name="Default Changelist" comment="Client Step 8.4: Rewrite fragments" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,8 +69,8 @@
       <updated>1591198053517</updated>
       <workItem from="1591198054920" duration="6131000" />
       <workItem from="1591264174634" duration="10733000" />
-      <workItem from="1591345295772" duration="9534000" />
-      <workItem from="1591619078670" duration="5819000" />
+      <workItem from="1591345295772" duration="9598000" />
+      <workItem from="1591603153063" duration="3002000" />
     </task>
     <task id="LOCAL-00001" summary="Client Step 6.3: Navigate to chat on click">
       <created>1591267739257</created>
@@ -121,6 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591357697577</updated>
     </task>
+    <task id="LOCAL-00009" summary="Client Step 8.1: Send message with a GraphQL mutation">
+      <created>1591374647201</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1591374647201</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <task id="LOCAL-00009" summary="Client Step 8.2: Rewrite lastMessage to chats query">
       <created>1591620866349</created>
       <option name="number" value="00009" />
@@ -176,6 +191,8 @@
     <MESSAGE value="Client Step 7.1: Add Apollo client" />
     <MESSAGE value="Client Step 7.2: Provide Apollo client" />
     <MESSAGE value="Client Step 7.3: Replace fetch() calls with Apollo useQuery()" />
+    <MESSAGE value="Client Step 8.1: Send message with a GraphQL mutation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Client Step 8.1: Send message with a GraphQL mutation" />
     <MESSAGE value="Client Step 8.2: Rewrite lastMessage to chats query" />
     <MESSAGE value="Client Step 8.3: Update queries to use GraphQL fragments" />
     <MESSAGE value="Client Step 8.4: Rewrite fragments" />
