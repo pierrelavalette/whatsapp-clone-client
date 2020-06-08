@@ -19,10 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="579b2794-3491-474e-aee6-fe3526444094" name="Default Changelist" comment="Client Step 7.3: Replace fetch() calls with Apollo useQuery()">
+    <list default="true" id="579b2794-3491-474e-aee6-fe3526444094" name="Default Changelist" comment="Client Step 8.2: Rewrite lastMessage to chats query">
+      <change afterPath="$PROJECT_DIR$/src/graphql/fragments/chat.fragment.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/graphql/fragments/fullChatfragment.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/graphql/fragments/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/graphql/fragments/message.fragment.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/ChatRoomScreen/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/ChatRoomScreen/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/ChatsListScreen/ChatsList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/ChatsListScreen/ChatsList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graphql/queries/chats.query.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphql/queries/chats.query.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +71,7 @@
       <workItem from="1591198054920" duration="6131000" />
       <workItem from="1591264174634" duration="10733000" />
       <workItem from="1591345295772" duration="9534000" />
-      <workItem from="1591619078670" duration="1586000" />
+      <workItem from="1591619078670" duration="2884000" />
     </task>
     <task id="LOCAL-00001" summary="Client Step 6.3: Navigate to chat on click">
       <created>1591267739257</created>
@@ -125,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591357697577</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Client Step 8.2: Rewrite lastMessage to chats query">
+      <created>1591620866349</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1591620866349</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,7 +163,8 @@
     <MESSAGE value="Client Step 7.1: Add Apollo client" />
     <MESSAGE value="Client Step 7.2: Provide Apollo client" />
     <MESSAGE value="Client Step 7.3: Replace fetch() calls with Apollo useQuery()" />
-    <option name="LAST_COMMIT_MESSAGE" value="Client Step 7.3: Replace fetch() calls with Apollo useQuery()" />
+    <MESSAGE value="Client Step 8.2: Rewrite lastMessage to chats query" />
+    <option name="LAST_COMMIT_MESSAGE" value="Client Step 8.2: Rewrite lastMessage to chats query" />
   </component>
   <component name="WindowStateProjectService">
     <state x="374" y="246" width="691" height="627" key="EditFileWatcherDialog" timestamp="1591364165224">
@@ -163,9 +175,9 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="229" y="100" key="SettingsEditor/0.23.1440.877/1440.-510.1920.1057@0.23.1440.877" timestamp="1591374583745" />
-    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1591369815516">
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1591622074031">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877/1440.-510.1920.1057@0.23.1440.877" timestamp="1591369815516" />
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877/1440.-510.1920.1057@0.23.1440.877" timestamp="1591622074031" />
   </component>
 </project>
