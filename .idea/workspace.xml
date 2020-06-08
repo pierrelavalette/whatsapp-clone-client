@@ -20,10 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="579b2794-3491-474e-aee6-fe3526444094" name="Default Changelist" comment="Client Step 7.3: Replace fetch() calls with Apollo useQuery()">
-      <change afterPath="$PROJECT_DIR$/src/graphql/queries/chats.query.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graphql/queries/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/ChatRoomScreen/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/ChatRoomScreen/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/ChatsListScreen/ChatsList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/ChatsListScreen/ChatsList.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +67,7 @@
       <workItem from="1591198054920" duration="6131000" />
       <workItem from="1591264174634" duration="10733000" />
       <workItem from="1591345295772" duration="9534000" />
+      <workItem from="1591619078670" duration="1586000" />
     </task>
     <task id="LOCAL-00001" summary="Client Step 6.3: Navigate to chat on click">
       <created>1591267739257</created>
