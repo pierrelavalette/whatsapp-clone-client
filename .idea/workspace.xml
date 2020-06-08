@@ -19,14 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="579b2794-3491-474e-aee6-fe3526444094" name="Default Changelist" comment="Client Step 8.2: Rewrite lastMessage to chats query">
-      <change afterPath="$PROJECT_DIR$/src/graphql/fragments/chat.fragment.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graphql/fragments/fullChatfragment.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graphql/fragments/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graphql/fragments/message.fragment.ts" afterDir="false" />
+    <list default="true" id="579b2794-3491-474e-aee6-fe3526444094" name="Default Changelist" comment="Client Step 8.3: Update queries to use GraphQL fragments">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/ChatRoomScreen/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/ChatRoomScreen/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graphql/queries/chats.query.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphql/queries/chats.query.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +66,7 @@
       <workItem from="1591198054920" duration="6131000" />
       <workItem from="1591264174634" duration="10733000" />
       <workItem from="1591345295772" duration="9534000" />
-      <workItem from="1591619078670" duration="2884000" />
+      <workItem from="1591619078670" duration="5263000" />
     </task>
     <task id="LOCAL-00001" summary="Client Step 6.3: Navigate to chat on click">
       <created>1591267739257</created>
@@ -136,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591620866349</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Client Step 8.3: Update queries to use GraphQL fragments">
+      <created>1591622436656</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1591622436656</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,7 +166,8 @@
     <MESSAGE value="Client Step 7.2: Provide Apollo client" />
     <MESSAGE value="Client Step 7.3: Replace fetch() calls with Apollo useQuery()" />
     <MESSAGE value="Client Step 8.2: Rewrite lastMessage to chats query" />
-    <option name="LAST_COMMIT_MESSAGE" value="Client Step 8.2: Rewrite lastMessage to chats query" />
+    <MESSAGE value="Client Step 8.3: Update queries to use GraphQL fragments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Client Step 8.3: Update queries to use GraphQL fragments" />
   </component>
   <component name="WindowStateProjectService">
     <state x="374" y="246" width="691" height="627" key="EditFileWatcherDialog" timestamp="1591364165224">
