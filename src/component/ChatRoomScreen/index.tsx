@@ -85,11 +85,11 @@ const ChatRoomScreen: React.FC<ChatRoomScreenParams> = ({
         },
         update: (client, { data }) => {
           if (data && data.addMessage) {
-            type FullChat = { [hey: string]: any};
+            type FullChat = { [hey: string]: any };
             let fullChat;
             const chatIdFromStore = defaultDataIdFromObject(chat);
 
-            if (chatIdFromStore === null){
+            if (chatIdFromStore === null) {
               return;
             }
 
@@ -110,7 +110,7 @@ const ChatRoomScreen: React.FC<ChatRoomScreenParams> = ({
                 data.addMessage.id === null) {
               return;
             }
-            if (fullChat.messages.some((currentMessage: any) => currentMessage.id === data.addMessage.id)){
+            if (fullChat.messages.some((currentMessage: any) => currentMessage.id === data.addMessage.id)) {
               return;
             }
 
@@ -151,8 +151,9 @@ const ChatRoomScreen: React.FC<ChatRoomScreenParams> = ({
 
             client.writeQuery({
               query: queries.chats,
-              data: { chats: chats },
+              data: {chats: chats},
             });
+          }
         },
       });
     },
